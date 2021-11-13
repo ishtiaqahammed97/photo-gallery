@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+    margin-left: 3%;
+}
+.previous{
+    float: left;
+    padding: 8px 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.next{
+    float: left;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.cards{
+    box-sizing: border-box;
+}
+
+.photo-card{
+    width: 240px;
+    box-sizing: border-box;
+    margin-right: 16px;
+    float: left;
+    margin-bottom: 25px;
+    display: block;
+    overflow: hidden;
+}
+.card-image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+.photo-card h2{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.preview-section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.692);
+    transform: scale(0);
+    transition: all .6s ease;
+}
+.show{
+    display: block;
+    transform: scale(1);
+}
+.preview-box{
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.preview-box .img-box{
+    display: flex;
+}
+.preview-box .details{
+    text-align: right;
+}
+.preview-box .details i{
+    font-size: 30px;
+    color: #fff;
+}
+.preview-box .details i{
+    cursor: pointer;
+}
+.preview-box .img-box img{
+    width: 100%;
+}
+.preview-image{
+    width: 500px;
+    height: 550px;
+}
+.buttonWrapper{
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 150px;
+    padding-bottom: 50px;
+    display: block;
+}
+.card-image:hover img{
+    transform: scale(1.5);
+}
+.card-image img:hover{
+    cursor: pointer;
+    overflow: hidden;
+}
+.warning {
+    color: rgb(255, 65, 65);
+}
